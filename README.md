@@ -1,4 +1,4 @@
-# karisma
+# karisma-new
 Karisma integration for Home Assistant (HA)
 
 ## Highlights of what it does offer
