@@ -1,0 +1,34 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add new Karisma Relay",
+        "description": "Specify the device address by selecting checkboxes according to the pins that have jumpers on.",
+        "data": {
+          "relay_type": "Please choose the relay type",
+          "pin_name_0": "1: Switch name",
+          "pin_name_1": "2: Switch name",
+          "pin_name_2": "3: Switch name",
+          "pin_name_3": "4: Switch name",
+          "pin_name_4": "5: Switch name",
+          "pin_name_5": "6: Switch name",
+          "pin_name_6": "7: Switch name",
+          "pin_name_7": "8: Switch name",
+          "pin_name_8": "9: Switch name",
+          "pin_name_9": "10: Switch name",
+          "pin_name_10": "11: Switch name",
+          "pin_name_11": "12: Switch name",
+          "pin_name_12": "13: Switch name",
+          "pin_name_13": "14: Switch name",
+          "pin_name_14": "15: Switch name",
+          "pin_name_15": "16: Switch name",
+          "addr": "Address"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "cannot_create": "Unable to create Karisma device with specified parameters"
+    }
+  }
+}
