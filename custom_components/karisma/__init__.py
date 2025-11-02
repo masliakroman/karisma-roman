@@ -53,8 +53,8 @@ async def async_setup_entry(hass, config_entry):
 
     # Forward entry setup to configured platform
     hass.async_create_task(
-        hass.config_entries.async_forward_entry_setups(
-            config_entry, config_entry.data[CONF_FLOW_PLATFORM]
+        await hass.config_entries.async_forward_entry_setups(
+            config_entry, [config_entry.data[CONF_FLOW_PLATFORM]]
         )
     )
 
