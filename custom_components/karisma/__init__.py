@@ -52,8 +52,10 @@ async def async_setup_entry(hass, config_entry):
     """Set up the Karisma from a config entry."""
 
     # Forward entry setup to configured platform
-    await hass.config_entries.async_forward_entry_setups(
-        config_entry, [config_entry.data[CONF_FLOW_PLATFORM]]
+    hass.async_create_task(
+        return hass.config_entries.async_forward_entry_setups(
+            config_entry, [config_entry.data[CONF_FLOW_PLATFORM]]
+        )
     )
 
     return True
